@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  announcement_at: 2016-03-25 16:57:12
+  message: MyString
+  exec_id: 
+
+two:
+  announcement_at: 2016-03-25 16:57:12
+  message: MyString
+  exec_id: 
