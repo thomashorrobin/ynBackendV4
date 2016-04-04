@@ -48,7 +48,12 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: ynBackendV4_production
-  username: ynBackendV4
-  password: <%= ENV['MYSQL_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+  host: localhost
+  database: yns_backend_production
+  username: rails
+  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
